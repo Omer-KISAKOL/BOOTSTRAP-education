@@ -12,7 +12,64 @@
     </style>
 </head>
 <body>
+
+    <div class="my-4">
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#content1">Button</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target=".card">Multiple</button>
+        <a href="#" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#content2">Link</a>
+    </div>
     
+    <div class="card collapse show mb-3" id="content1">
+        <div class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi totam perspiciatis enim. Recusandae tenetur commodi, architecto sint adipisci dolorem rerum autem! Nemo voluptas quisquam soluta vero aliquid doloribus quibusdam itaque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi totam perspiciatis enim. Recusandae tenetur commodi, architecto sint adipisci dolorem rerum autem! Nemo voluptas quisquam soluta vero aliquid doloribus quibusdam itaque.
+        </div>
+    </div>
+
+    <div class="card collapse show" id="content2">
+        <div class="card-body">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ab minus veritatis sunt fugit blanditiis exercitationem eveniet modi qui quia! Ex illo at tempora alias eligendi perspiciatis consequatur, iure placeat.
+        </div>
+    </div>
+
+    <br><br>
+
+    <div id="accordion" class="my-4">
+
+        <div class="card mb-1">
+            <div class="card-header bg-primary">
+                <a href="#collapseOne" class="card-link text-white" data-bs-toggle="collapse">Collapse One</a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facere quis ipsa magni est aperiam numquam, aliquam maiores iste accusamus ducimus cupiditate amet perferendis soluta ut voluptatibus necessitatibus sunt distinctio!
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-1">
+            <div class="card-header bg-primary">
+                <a href="#collapseTwo" class="card-link text-white" data-bs-toggle="collapse">Collapse Two</a>
+            </div>
+            <div id="collapseTwo" class="collapse hide" data-bs-parent="#accordion">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facere quis ipsa magni est aperiam numquam, aliquam maiores iste accusamus ducimus cupiditate amet perferendis soluta ut voluptatibus necessitatibus sunt distinctio!
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-1">
+            <div class="card-header bg-primary">
+                <a href="#collapseThree" class="card-link text-white" data-bs-toggle="collapse">Collapse Three</a>
+            </div>
+            <div id="collapseThree" class="collapse hide" data-bs-parent="#accordion">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facere quis ipsa magni est aperiam numquam, aliquam maiores iste accusamus ducimus cupiditate amet perferendis soluta ut voluptatibus necessitatibus sunt distinctio!
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
 
